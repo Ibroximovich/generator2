@@ -1,0 +1,124 @@
+.header {
+    &__list {
+        @include Displey($space: end);
+        gap: 20px;
+        padding: 26px 0px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &__item {
+        @include Displey($space: start);
+        color: black;
+        transition: all 0.4s;
+        @include Hovertext();
+    }
+
+    &__item-a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: #333333B2;
+        opacity: 70%;
+    }
+
+    &__item-generator {
+        @include Displey($space: start);
+        gap: 5px;
+    }
+
+    &__item-select {
+        border: none;
+        outline: none;
+    }
+
+    &__item-option {
+        background-color: blue;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1.27px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+    }
+
+    &__item-img {
+        @include Displey($space: start);
+    }
+
+    &__item-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navbar {
+        @include Displey($space: space-between);
+    }
+
+    &__item {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+
+    &__item-contact {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: gray;
+    }
+
+    &__li {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        height: 50px;
+        padding-left: 9px;
+    }
+
+    &__generator {
+        @include Displey($space: start);
+        gap: 6px;
+        padding: 28px 0px;
+    }
+
+    &__item-content {
+        @include Displey($space: start);
+        gap: 50px;
+    }
+
+    &__form {
+        @include Displey($space: start);
+        gap: 20px;
+    }
+
+    &__input-img {
+        @include Displey($space: start);
+        gap: 8px;
+    }
+
+    &__input-img>input {
+        width: 48px;
+        padding: 8px 0px;
+        border: none;
+        outline: none;
+    }
+
+    &__consultatsiya {
+        @include btnStyle();
+        border-radius: 8px;
+        padding: 8px 15px 8px 15px;
+    }
+
+    &__consultatsiya>a {
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        @include Displey($space: start);
+
+    }
+
+}

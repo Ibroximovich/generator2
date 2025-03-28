@@ -1,0 +1,183 @@
+.section{
+    padding-top: 110px;
+    padding-bottom: 122px;
+    background-image: url(../images/orqa-fon1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hero{
+    &__content{
+        width: 582px;
+    }
+    &__title{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: white;
+
+        
+    }
+    &__text{
+    font-family: 'Inter',sans-serif;
+     margin-top: 16px;
+     margin-bottom: 32px;  
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 80%;
+    color: white;
+    }
+    &__btn{
+       font-family: 'Montserrat',sans-serif;
+       @include btnStyle();
+       padding: 15px 31px;
+       font-weight: 600;
+       font-size: 18px;
+       line-height: 100%;
+       letter-spacing: 0%;
+       text-align: center;
+       
+    }
+}
+.about{
+    @include Displey($space:justify-content);
+    align-items: start;
+    gap: 39px;
+    padding-top: 67px;
+    padding-bottom: 76px;
+    &__content{
+        width: 540px;
+    }
+    &__img{
+       transition: 0.7s;
+       @include Transform($scale:1.04);
+    }
+    &__title{
+        margin-top: 10px;
+        margin-bottom: 16px;
+        font-family: 'Helvetica',sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+    &__text{
+        margin-bottom: 10px;
+        font-family: 'Helvetica',sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        opacity: 80%;
+    }
+   
+}
+.catalog-section{
+    padding-bottom: 58px;
+}
+.catalog{
+    @include Displey($space:center);
+    gap: 26px;
+    &__content{
+        box-shadow: 0 0 1px 1px  rgba(128, 128, 128, 0.1);
+        border-radius: 6px;
+        width: 250px;
+        transition: all 0.4s;
+        @include Transform($scale:1.1);
+    }
+    &__content:active{
+            transform: scale(0.90);
+    }
+    &__title-catalog{
+        margin-bottom: 64px;
+        font-family: 'Helvetica' sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        
+    }
+    &__content2{
+        padding: 0 19px;
+    }
+    &__content-title{
+        font-family: 'Helvetica',sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;    
+    }
+    &__content-text{
+        font-family: 'Helvetica',sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+    &__content-text--dizel{
+        font-family: 'Helvetica',sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        opacity: 60%;
+    }
+    &__content-btn{
+        @include btnStyle();
+        padding: 10px 61px;
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+}
+.cabinet{
+
+    &__title{
+        width: 816px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-family: 'Helvetica',sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: lowercase;
+        
+    }
+    &__text{
+        padding-bottom: 50px;
+        width: 816px;
+        margin: 0 auto;
+        font-family: 'Helvetica' sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        opacity: 80%;     
+    }
+}
+.logo{
+    &__title{
+        margin-top: 67px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'Helvetica'sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        
+    }
+    &__img{
+        @include Displey($space:start);
+        gap: 50px;
+    }
+}
