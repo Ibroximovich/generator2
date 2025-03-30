@@ -1,0 +1,45 @@
+.five-section{
+    background-image: url(../images/5-qism.png);
+    height: 566px;
+    padding-top: 177px;
+    padding-bottom: 75px;
+}
+.partner{
+    &__title{
+        margin-top: 57px;
+        margin-bottom: 28px;
+        text-align: center;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%; 
+    }
+    &__div-title{
+        width: 409px;
+        margin-bottom: 8.5px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+    &__div-text{
+        width: 444px;
+        margin-bottom: 30px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        opacity: 80%;   
+    }
+    &__container{
+        @include Displey($space:start);
+        align-items: start;
+        gap: 56px;
+        padding-bottom: 50px;
+        
+    }
+}

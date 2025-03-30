@@ -1,0 +1,35 @@
+.section-4{
+    background-image: url(../images/4-orqa-fon.png);
+    padding-top: 111px;
+    padding-bottom: 145px;
+}
+.four{
+    @include Displey($space:start);
+    align-items: start;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 40px;
+    gap: 20px;
+    & > img{
+        transition: 0.7s;
+        @include Transform($scale:1.04);
+    }
+    &__title{
+        margin-bottom: 20px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+    &__text{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        opacity: 80%;
+        
+    }
+}

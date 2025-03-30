@@ -1,3 +1,6 @@
+.site-main{
+    margin-top: 203px;
+}
 .section{
     padding-top: 110px;
     padding-bottom: 122px;
@@ -168,7 +171,7 @@
         margin-top: 67px;
         margin-bottom: 50px;
         text-align: center;
-        font-family: 'Helvetica'sans-serif;
+        font-family: 'Helvetica Neue',sans-serif;
         font-weight: 700;
         font-size: 48px;
         line-height: 100%;
@@ -180,4 +183,205 @@
         @include Displey($space:start);
         gap: 50px;
     }
+}
+.cabinet-section{
+    background-image: url(../images/form-orqa-fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 90px;
+    margin-top: 57px;
+}
+.form{
+    background-color: #4762FF;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 607px;
+    margin-right: 159px;
+    &__form{
+        @include Displey($space:start);
+        flex-direction: column;  
+        gap: 23px;
+    }
+    &__input,&__phone{
+        width: 90%;
+        padding: 19px 0px 19px 24px;
+        border-radius: 10px;
+        background-color: #FFFFFF1A;
+        color: white;
+        border: none;
+        outline: none;
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        
+    }
+    &__input::placeholder{
+        color: white;
+    }
+    &__phone::placeholder{
+        color: white;
+    }
+    &__btn{
+        width: 90%;
+        padding: 20px 0px;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Helvetica Neue';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        background-color: white;
+        color: #4762FF;  
+        cursor: pointer; 
+        transition: all 0.4s;
+        @include btnHover();
+    }
+    // &__btn:active{
+    //     transform: scale(0.90);
+    // }
+    &__title{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        width: 536px;
+        font-family: 'Helvetica Neue',sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: white;  
+    }
+    &__text{
+        width: 531px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        font-family: 'Helvetica Neue',sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: white;
+    }
+}
+.footer-section{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 111px;
+}
+.footer{
+    @include Displey($space:space-between);
+    align-items: start;
+    border-bottom: 1px solid gray;
+    width: 1124px;
+    border-radius: 0.7px;
+    padding-bottom: 35px;
+    &__content,&__contact,&__form{
+        width: 285px;
+    }
+    &__img{
+        @include Displey($space:start);
+        gap: 6px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: white;
+
+    }
+    &__img > a{
+        color: white;
+        @include Hovertext();
+    }
+    &__content{
+        @include Displey($space:start);
+        flex-direction: column;
+         @include Hovertext();
+    }
+    &__strong{
+        margin-bottom: 15px;
+        font-family: 'Helvetica Neue',sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: white; 
+        transition: 0.4s;
+        @include Hovertext();
+    }
+    &__item{
+        font-family: 'Helvetica Neue',sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: white;
+        margin-bottom: 8px; 
+        transition: 0.4s; 
+       @include Hovertext() ;  
+    }
+    &__desc{
+        font-family: 'Helvetica Neue',sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: white;
+        @include Hovertext();        
+    }
+    &__adres{
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    &__mail{
+        margin: 8px 0px;
+    }
+    
+    &__form{
+        width: 283px;
+    }
+    &__input > input{
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 19px 12px;
+        border-radius: 5px;
+       border: 1px solid white;
+       outline: none;
+       background-color: black;
+       color: white;
+    }
+    &__input >input::placeholder{
+        color: white;
+    }
+    &__input > button{
+        width: 80%;
+        padding: 17px 0px;
+        border-radius: 5px;
+        border:1px solid white;
+        background-color: rgba(255,255,255,0.1);
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s;
+        @include btnHover();
+    }
+    &__p{
+        margin-top: 18px;
+        font-family: 'Helvetica Neue'sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        color: white;
+        
+    }
+
 }

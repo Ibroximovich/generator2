@@ -1,0 +1,172 @@
+.section-2{
+    height: 566px;
+    background-image: url(../images/second-section.png);
+    padding-top: 110px;
+}
+.cabinet{
+    &__title{
+        margin-bottom: 42px;
+        text-align: center;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        
+    }
+    &__img{
+        padding-bottom: 74px;
+    }
+}
+.logo{
+    text-align: center;
+    &__text{
+        @include Displey($space:space-between);
+    }
+    &__title{
+        margin-top: 67px;
+        margin-bottom: 51px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%;   
+    }
+    &__strong{
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #4762FF;
+    }
+    &__p{
+        width: 338px;
+        margin-top: 19.5px;
+        margin-bottom: 99px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        opacity: 80%;
+        
+    }
+}
+// .checked{
+//     &__brend{
+//         margin-bottom: 13px;
+//         font-family: 'Helvetica Neue',sans-serif;
+//         font-weight: 500;
+//         font-size: 18px;
+//         line-height: 150%;
+//         letter-spacing: 0%;
+//         vertical-align: middle;
+//         text-transform: uppercase;   
+//     }
+//     &__form{
+//         @include Displey($space:start);
+//         align-items: start;
+//         flex-direction: column;
+//         gap: 5px;
+//         width: 302px;
+//         margin-bottom: 640px;
+//     }
+//     &__form > label{
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+//         font-family: 'Helvetica Neue',sans-serif;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 150%;
+//         letter-spacing: 0%;
+//         vertical-align: middle;  
+//     }
+//     &__p{
+//         padding: 8px 0px;
+//         border: 1px solid gray;
+//         width: 300px;
+//         margin-left: 10px;
+//         border-top: none;
+//         border-left: none;
+//         border-right: none;
+//     }
+//     &__span{
+//         font-family: 'Helvetica Neue',sans-serif;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 150%;
+//         letter-spacing: 0%;
+//         vertical-align: middle;
+        
+//     }
+//     &__title{
+//         margin-top: 44px;
+//         margin-bottom: 52px;
+//         margin-left: 110px;
+//         font-family: 'Montserrat',sans-serif;
+//         font-weight: 700;
+//         font-size: 48px;
+//         line-height: 100%;
+//         letter-spacing: 0%;    
+//     }
+//     &__content{
+//         @include Displey($space:start);
+//         align-items: start;
+//         flex-wrap: wrap;
+//         gap: 16px;
+//         padding-left: 40px;
+//         padding-bottom: 48px;
+//     } 
+//     &__content2{
+//         box-shadow: 0 0 1px 1px  rgba(128, 128, 128, 0.1);
+//         border-radius: 6px;
+//         width: 250px;
+//         transition: all 0.4s;
+//         // @include Transform($scale:1.04);
+//     }
+//     &__active:hover{
+//         transform: scale(1.04);
+//     }
+//     &__active:active{
+//         @include Transform($scale:0.90);
+
+//     }
+// }
+    // katalog
+//     &__div{
+//         padding: 0 19px;
+//     }
+//     &__content-title{
+//         font-family: 'Helvetica',sans-serif;
+//         font-weight: 500;
+//         font-size: 20px;
+//         line-height: 150%;
+//         letter-spacing: 0%;
+//         vertical-align: middle;    
+//     }
+//     &__content-text{
+//         font-family: 'Helvetica',sans-serif;
+//         font-weight: 700;
+//         font-size: 14px;
+//         line-height: 20px;
+//         letter-spacing: 0%;
+//     }
+//     &__content-text--dizel{
+//         font-family: 'Helvetica',sans-serif;
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 20px;
+//         letter-spacing: 0%;
+//         opacity: 60%;
+//     }
+//     &__content-btn{
+//         @include btnStyle();
+//         padding: 10px 61px;
+//         margin-top: 14px;
+//         margin-bottom: 20px;
+//     }
+
+// }

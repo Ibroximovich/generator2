@@ -1,3 +1,10 @@
+.site-header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 .header {
     &__list {
         @include Displey($space: end);
@@ -10,6 +17,7 @@
         @include Displey($space: start);
         color: black;
         transition: all 0.4s;
+        padding: 14px 11px;
         @include Hovertext();
     }
 
@@ -30,10 +38,15 @@
     &__item-select {
         border: none;
         outline: none;
+        &:hover{
+            background-color: blue;
+        }
     }
 
     &__item-option {
         background-color: blue;
+        color: white;
+        width: 100px;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
@@ -48,7 +61,7 @@
         @include Displey($space: start);
     }
 
-    &__item-content {
+    &__item-content{
         display: flex;
         align-items: center;
     }
@@ -71,12 +84,6 @@
         line-height: 100%;
         letter-spacing: 0px;
         color: gray;
-    }
-
-    &__li {
-        border-left: 1px solid rgba(0, 0, 0, 0.1);
-        height: 50px;
-        padding-left: 9px;
     }
 
     &__generator {
@@ -106,6 +113,10 @@
         border: none;
         outline: none;
     }
+    &__input-img > input:focus{
+        border: 1px solid black;
+        border-radius: 5px
+    }
 
     &__consultatsiya {
         @include btnStyle();
@@ -122,3 +133,74 @@
     }
 
 }
+
+.header-lang-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-left: 1px solid gray;
+    height: 50px;
+    padding: 14px 11px;
+    color: #707070;
+    transition: all 0.3s;
+    position: relative;
+    &:hover{
+        background-color:#4762FF;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-left: 1px solid white;
+        color:  white;
+    }
+    &:hover >.header-top__popap{
+        height: 88px;
+        padding: 5px;
+    }
+    &:hover >span ~svg{
+        transform: rotate(180deg);
+    }
+}
+
+.header-top__popap{
+        position: absolute;
+        width: 100%;
+        top: 46px;
+        left: 0;
+        background-color:#4762FF;
+        height: 0;
+        overflow: hidden;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        &>li{
+                text-align: center;
+                padding: 10px 0;
+                transition: all 0.3s;
+                color: white;
+            &:hover{
+                // height: 86px;
+                // padding: 5px;
+                background-color: white;
+                border-radius: 10px;
+                color: black;
+    }
+}
+}  
+//            }
+//         &>li{
+//             text-align: center;
+//             padding: 10px 0;
+//             transition: all 0.3s;
+            
+//             &:hover{
+//                 background-color: red;
+//                 border-radius: 10px 0;
+//                 color:black;
+//             }
+//            }
+//            & > span ~ svg{
+//           transition: transform 0.3s;
+//            }
+//            &:hover > span ~ svg{
+//             transform: rotate(180deg);
+//            }
+//     }
+
